@@ -28,12 +28,12 @@ const etkinlikler = [
     },
     {
         id: 4,
-        title: "Doğu Demirkol Stand Up Gösterisi",
-        category: "Stand Up",
-        date: "2026-09-30", 
-        location: "Bostanlı Suat Taşer Tiyatrosu",
-        description: "Komedi sahnesinin en özgün ve dikkat çeken isimlerinden, Türkiye’nin yanı sıra Avrupa ve Amerika’da da kapalı gişe stand-up gösterilerine devam eden Doğu Demirkol, izleyicisiyle buluşmaya devam ediyor.",
-        image: "assets/images/dogu-demirkol-48512.webp"
+        title: "Celal Şengör ile 90 Dakika - İzmir",
+        category: "Seminer",
+        date: "2026-12-20", 
+        location: "Tepekule Kültür ve Kongre Merkezi",
+        description: "Prof.Dr.Jeolog CELAL ŞENGÖR ile bu etkinlikte belirtilen konular üzerinden 90 dakika söyleşi gerçekleşecektir. Eğitim sonunda eğitmenin insiyatifi ile kendi kitapları üzerinden imza töreni olucaktır. Eğitim sonunda eğitmen imzalı isminize özel dijital belgeleriniz 7 iş günü içinde sms ile tarafınıza gönderilecektir. İsteğe bağlı etkinlik sonrasında (ek ücret ile) e-devlette belgenizi görüntüleme ve Adrese Teslim Fiziki Sertifika hakkına sahipsiniz. Belirtilen belgeler size yetki vermez. Katılım sağladığınızı belirtir. Cv’nizde kullanılabilir. Veritabanı kodunu firmalara verebilirsiniz.",
+        image: "assets/images/celal-sengor-ile-90-dakika-izmir--20260815070206904-cfd123d94d1e.webp"
     }
 ];
     
