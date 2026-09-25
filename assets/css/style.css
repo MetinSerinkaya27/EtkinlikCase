@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #111;
+  background-color: #f8f8f8;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 36px;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 14px;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Main Alanı */
+.page-body {
+  flex: 1;
+  width: 90%;
+  max-width: 1100px;
+  margin: 24px auto;
+}
+
+.top-banner {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 30px;
+  margin-bottom: 24px;
+}
+
+.top-banner h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.top-banner p {
+  font-size: 14px;
+  color: #555;
+}
+
+.events-wrap {
+  margin-bottom: 30px;
+}
+
+.events-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.events-head h2 {
+  font-size: 18px;
+}
+
+.events-head a {
+  font-size: 13px;
+  color: #555;
+}
+
+.events-head a:hover {
+  text-decoration: underline;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Footer (Ekranın en altında) */
+.footer {
+  background: #111111;
+  color: #999;
+  padding: 24px;
+  font-size: 13px;
+  margin-top: auto;
+}
+
+.footer-box {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #ddd;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.disclaimer {
+  font-size: 11px;
+  color: #666;
+}
+
+
+@media (max-width: 768px) {
+  .nav-bar {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .top-banner {
+    padding: 20px 16px;
+  }
+
+  .top-banner h1 {
+    font-size: 18px;
+  }
+
+  .links {
+    flex-wrap: wrap;
+  }
+}
