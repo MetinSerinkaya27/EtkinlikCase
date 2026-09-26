@@ -384,7 +384,79 @@ ul {
   color: #666;
 }
 
-/* Mobil Düzen */
+
+.detay-kutu {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 24px;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 32px !important;
+  margin-top: 16px;
+}
+
+.detay-sol {
+  flex: 0 0 360px !important;
+  width: 360px !important;
+  max-width: 360px !important;
+}
+
+.detay-sol img {
+  width: 100% !important;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.detay-sag {
+  flex: 1 !important;
+}
+
+.detay-badge {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.detay-baslik {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.detay-bilgiler {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+}
+
+.detay-bilgiler div, .detay-bilgiler p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.detay-aciklama h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.detay-aciklama p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobil Düzen (Sadece Ekran Daraldığında Çalışır) */
 @media (max-width: 768px) {
   .nav-bar {
     height: auto;
@@ -416,5 +488,15 @@ ul {
 
   .links {
     flex-wrap: wrap;
+  }
+
+  .detay-kutu {
+    flex-direction: column !important;
+  }
+
+  .detay-sol {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
   }
 }

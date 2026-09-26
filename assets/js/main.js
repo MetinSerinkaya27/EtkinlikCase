@@ -37,7 +37,6 @@ var butonlar = document.querySelectorAll(".filter-btn");
 
 for (var i = 0; i < butonlar.length; i++) {
   butonlar[i].onclick = function () {
-    // Önce hepsinin rengini sıfırla
     for (var j = 0; j < butonlar.length; j++) {
       butonlar[j].classList.remove("active");
     }
