@@ -1,7 +1,6 @@
 var favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
 var grid = document.getElementById("events-grid");
 
-// Ekrana kartları basma
 function etkinlikleriBas(liste) {
   if (!grid) return;
   grid.innerHTML = "";
@@ -33,7 +32,7 @@ function etkinlikleriBas(liste) {
   }
 }
 
-// Butonlara tıklayınca filtreleme
+
 var butonlar = document.querySelectorAll(".filter-btn");
 
 for (var i = 0; i < butonlar.length; i++) {
@@ -60,7 +59,6 @@ for (var i = 0; i < butonlar.length; i++) {
   };
 }
 
-// Favoriye ekle / çıkar
 function favoriYap(id) {
   if (favoriler.includes(id)) {
     favoriler = favoriler.filter(function (fId) {
@@ -71,7 +69,6 @@ function favoriYap(id) {
   }
   localStorage.setItem("favoriler", JSON.stringify(favoriler));
 
-  // O an seçili kategoriye göre sayfayı yenile
   var seciliBtn = document.querySelector(".filter-btn.active");
   var seciliKat = seciliBtn ? seciliBtn.getAttribute("data-category") : "all";
 
@@ -88,5 +85,4 @@ function favoriYap(id) {
   }
 }
 
-// Sayfa açıldığında ilk listeleme
 etkinlikleriBas(etkinlikler);
