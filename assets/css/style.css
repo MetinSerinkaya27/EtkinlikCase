@@ -499,3 +499,99 @@ ul {
     flex: none !important;
   }
 }
+/* ===================================================
+   BLOG SAYFASI STİLLERİ
+   =================================================== */
+.yazi-kutu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.yazi-kart {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.yazi-ust {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 16px;
+}
+
+.kategori-etiket {
+  display: inline-block;
+  background: #111111;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.yazi-kart h2 {
+  font-size: 24px;
+  color: #111111;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.yazi-bilgi {
+  font-size: 13px;
+  color: #777777;
+}
+
+.yazi-kart h3 {
+  font-size: 17px;
+  color: #222222;
+  margin: 24px 0 10px 0;
+  border-left: 3px solid #111111;
+  padding-left: 10px;
+}
+
+.yazi-kart p {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.yazi-kart ul {
+  margin: 12px 0 20px 24px;
+  list-style-type: disc;
+}
+
+.yazi-kart ul li {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.bilgi-kutu {
+  background: #fcfcfc;
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+
+.bilgi-kutu h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #111111;
+}
+
+.bilgi-kutu p {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #666666;
+}
