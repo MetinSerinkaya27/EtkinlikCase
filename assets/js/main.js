@@ -3,6 +3,14 @@ var grid = document.getElementById("events-grid");
 
 function etkinlikleriBas(liste) {
   if (!grid) return;
+if (window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/")) {
+    liste.sort(function(a, b) {
+      var t1 = a.date.split("-").reverse().join("-");
+      var t2 = b.date.split("-").reverse().join("-");
+      return t1.localeCompare(t2);
+    });
+    liste = liste.slice(0, 3);
+  }
   grid.innerHTML = "";
 
   for (var i = 0; i < liste.length; i++) {
