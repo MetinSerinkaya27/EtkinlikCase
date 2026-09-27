@@ -17,7 +17,7 @@ if (secilen) {
   detayAlani.innerHTML = `
     <div class="detay-kutu">
       <div class="detay-sol">
-        <img src="${secilen.image}" alt="${secilen.title}">
+        <img src="${secilen.image}" alt="${secilen.title}" decoding="async" fetchpriority="high">
       </div>
       <div class="detay-sag">
         <span class="detay-badge">${secilen.category}</span>
@@ -38,4 +38,59 @@ if (secilen) {
   `;
 } else {
   detayAlani.innerHTML = "<p>Aradığınız etkinlik bulunamadı.</p>";
+}
+if (secilen) {
+  var semaVerisi = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://eventhub.local/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Etkinlikler",
+            "item": "https://eventhub.local/etkinlikler.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": secilen.title,
+            "item": window.location.href
+          }
+        ]
+      },
+      {
+        "@type": "Event",
+        "name": secilen.title,
+        "description": secilen.description,
+        "startDate": secilen.date + "T20:00:00+03:00",
+        "location": {
+          "@type": "Place",
+          "name": secilen.location
+        },
+        "image": [
+          "https://eventhub.local/" + secilen.image
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": secilen.price,
+          "priceCurrency": "TRY",
+          "availability": "https://schema.org/InStock",
+          "url": window.location.href
+        }
+      }
+    ]
+  };
+
+  var semaAlani = document.getElementById("schema-event");
+  if (semaAlani) {
+    semaAlani.textContent = JSON.stringify(semaVerisi, null, 2);
+  }
 }

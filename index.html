@@ -6,7 +6,7 @@
   
   <title>EventHub | Etkinlik ve Bilet Yönetim Sistemi</title>
   <meta name="description" content="Aradığın tüm konser biletleri, tiyatro oyunları ve festival biletleri EventHub'da. Güncel etkinlik takvimini hemen gör, mekanları incele ve dilediğin etkinliği keşfet.">
-  <link rel="canonical" href="https://www.eventhub.com/index.html"> <!-- SAYIN YETKILI BURAYA DOMAIN ADRESIMIZ OLMADIGI ICIN ORNEK BIR URL EKLEDIM BILGINIZE SUNARIM EGER DOMAIN OLSA ONA GORE GUNCELEME YAPARDIK. -->
+  <link rel="canonical" href="https://www.eventhub.com/index.html"> 
 
 
   <meta property="og:site_name" content="EventHub">
@@ -15,14 +15,52 @@
   <meta property="og:description" content="Konser, tiyatro ve festival  ve seminer etkinlerklerini ögrenmke için.">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:type" content="website">
-  <meta property="og:image" content=""><!--SAYIN YETKILI BURAYA GÖRSEL ADRESI EKLENECEK-->
+  <meta property="og:image" content="assets/img/hakan-altun-63351.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="EventHub Platformu">
   <meta name="twitter:card" content="summary_large_image"> 
   <meta name="twitter:title" content="EventHub | Etkinlik ve Bilet Yönetim Sistemi">
   <meta name="twitter:description" content="Konser, tiyatro ve festival  ve seminer etkinlerklerini ögrenmke için.">
-  <meta name="twitter:image" content=""><!--SAYIN YETKILI BURAYA GÖRSEL ADRESI EKLENECEK-->
+  <meta name="twitter:image" content="assets/img/hakan-altun-63351.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://eventhub.local/#organization",
+      "name": "EventHub",
+      "url": "https://eventhub.local/",
+      "logo": "assets/img/hakan-altun-63351.webp",
+      "description": "Aradığın tüm konser biletleri, tiyatro oyunları ve festival biletleri EventHub'da. Güncel etkinlik takvimini hemen gör, mekanları incele ve dilediğin etkinliği keşfet.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+90-553-871-2100", 
+        "email": "27metinserinkaya@gmail.com", 
+        "contactType": "customer service",
+        "areaServed": "TR",
+        "availableLanguage": "Turkish"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eventhub.local/#website",
+      "url": "https://eventhub.local/", 
+      "name": "EventHub",
+      "publisher": {
+        "@id": "https://eventhub.local/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "etkinlikler.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
 
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -70,27 +108,23 @@
     </section>
   </main>
 
-  <footer class="footer">
+    <footer class="footer">
     <div class="footer-box">
       <div class="footer-nav">
         <a href="index.html">Ana Sayfa</a>
         <a href="etkinlikler.html">Etkinlikler</a>
-        <a href="etkinlikler.html?kategori=konser">Konserler</a>
-        <a href="etkinlikler.html?kategori=seminer">Seminerler</a>
-        <a href="etkinlikler.html?kategori=festival">Festivaller</a>
-        <a href="etkinlikler.html?kategori=tiyatro">Tiyatro</a>
         <a href="blog.html">Blog</a>
         <a href="hakkimizda.html">Hakkımızda</a>
         <a href="iletisim.html">İletişim</a>
       </div>
-
       <div class="links">
         <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
         <a href="kvkk.html">KVKK Aydınlatma Metni</a>
       </div>
+  
+      <p class="copy">&copy; 2026 EventHub. Tüm hakları saklıdır.</p>
+      <p class="disclaimer">Yasal Uyarı: Bu web sitesi Eterna web geliştirme case çalışması kapsamında bir simülasyon olarak geliştirilmiştir.</p>
     </div>
-    <p class="copy">&copy; 2026 EventHub. Tüm hakları saklıdır.</p>
-    <p class="disclaimer">Yasal Uyarı: Bu web sitesi Eterna web geliştirme case çalışması kapsamında bir simülasyon olarak geliştirilmiştir.</p>
   </footer>
 
   <script src="assets/js/data.js" ></script>

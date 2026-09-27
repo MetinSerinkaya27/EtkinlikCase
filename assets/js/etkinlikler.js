@@ -69,7 +69,7 @@ function kartlariGoster(liste) {
 
     var kartHtml = '<div class="event-card">' +
       '<div class="card-img-wrap">' +
-        '<img src="' + et.image + '" alt="' + et.title + '" loading="lazy">' +
+        '<img src="' + et.image + '" alt="' + et.title + '" width="400" height="250" loading="lazy" decoding="async">' +
         '<span class="card-badge">' + et.category + '</span>' +
         '<button class="' + favClass + '" onclick="favoriYap(' + et.id + ', this)">' + favYazi + '</button>' +
       '</div>' +
