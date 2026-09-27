@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+
+    <loc>https://www.eventhub.com/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.eventhub.com/etkinlikler.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.eventhub.com/etkinlik-detay.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+
+
+    <loc>https://www.eventhub.com/blog.html</loc>
+    <priority>0.870</priority>
+  </url>
+  <url>
+    <loc>https://www.eventhub.com/hakkimizda.html</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.eventhub.com/iletisim.html</loc>
+    <priority>0.70</priority>
+
+
+  </url>
+  <url>
+    <loc>https://www.eventhub.com/gizlilik-politikasi.html</loc>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://www.eventhub.com/kvkk.html</loc>
+    <priority>0.30</priority>
+  </url>
+  
+</urlset>
