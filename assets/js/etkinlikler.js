@@ -9,6 +9,8 @@ function favorileriAl() {
     return JSON.parse(kayit);
   } else {
     return [];
+
+
   }
 }
 
@@ -17,17 +19,21 @@ function favoriYap(id, btn) {
   var varMi = false;
   var sira = -1;
 
+
+
   for (var i = 0; i < dizi.length; i++) {
     if (dizi[i] == id) {
       varMi = true;
       sira = i;
       break;
     }
+
   }
 
   if (varMi == false) {
     dizi.push(id);
     btn.className = "btn-fav active";
+
     btn.innerHTML = "★";
   } else {
     dizi.splice(sira, 1);
@@ -39,9 +45,11 @@ function favoriYap(id, btn) {
 }
 
 
+
 function kartlariGoster(liste) {
   cards.innerHTML = "";
   var favlar = favorileriAl();
+  
 
   if (liste.length == 0) {
     cards.innerHTML = "<p>Bu alanda henüz etkinlik yok.</p>";
@@ -49,6 +57,8 @@ function kartlariGoster(liste) {
   }
 
   for (var i = 0; i < liste.length; i++) {
+
+
     var et = liste[i];
 
 
@@ -63,6 +73,7 @@ function kartlariGoster(liste) {
     var favClass = "btn-fav";
     var favYazi = "☆";
     if (favoriMi == true) {
+
       favClass = "btn-fav active";
       favYazi = "★";
     }
@@ -77,6 +88,7 @@ function kartlariGoster(liste) {
         '<div class="card-date">' + et.date + '</div>' +
         '<div class="card-title">' + et.title + '</div>' +
         '<div class="card-location">' + et.location + '</div>' +
+
         '<div class="card-footer">' +
           '<span class="card-price">' + et.price + ' TL</span>' +
           '<a href="etkinlik-detay.html?id=' + et.id + '" class="btn-detail">Detay</a>' +
@@ -98,6 +110,7 @@ if (gelenKategori != null && gelenKategori != "") {
   for (var j = 0; j < etkinlikler.length; j++) {
     if (etkinlikler[j].category.toLowerCase() == gelenKategori.toLowerCase()) {
       filtrelenenler.push(etkinlikler[j]);
+      
     }
   }
   kartlariGoster(filtrelenenler);

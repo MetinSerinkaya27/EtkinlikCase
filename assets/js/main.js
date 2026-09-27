@@ -3,9 +3,12 @@ var grid = document.getElementById("events-grid");
 
 function etkinlikleriBas(liste) {
   if (!grid) return;
+
 if (window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/")) {
     liste.sort(function(a, b) {
       var t1 = a.date.split("-").reverse().join("-");
+
+
       var t2 = b.date.split("-").reverse().join("-");
       return t1.localeCompare(t2);
     });
@@ -13,9 +16,13 @@ if (window.location.pathname.includes("index.html") || window.location.pathname.
   }
   grid.innerHTML = "";
 
+
+
+  
   for (var i = 0; i < liste.length; i++) {
     var e = liste[i];
     var favMi = favoriler.includes(e.id);
+
     var lazyAttr = i >= 2 ? 'loading="lazy"' : 'fetchpriority="high"';
 
     grid.innerHTML += `
@@ -41,6 +48,8 @@ if (window.location.pathname.includes("index.html") || window.location.pathname.
   }
 }
 
+
+
 var butonlar = document.querySelectorAll(".filter-btn");
 
 for (var i = 0; i < butonlar.length; i++) {
@@ -49,6 +58,8 @@ for (var i = 0; i < butonlar.length; i++) {
       butonlar[j].classList.remove("active");
     }
     this.classList.add("active");
+
+
 
     var kategori = this.getAttribute("data-category");
 
@@ -66,6 +77,8 @@ for (var i = 0; i < butonlar.length; i++) {
   };
 }
 
+
+
 function favoriYap(id) {
   if (favoriler.includes(id)) {
     favoriler = favoriler.filter(function (fId) {
@@ -79,6 +92,8 @@ function favoriYap(id) {
   var seciliBtn = document.querySelector(".filter-btn.active");
   var seciliKat = seciliBtn ? seciliBtn.getAttribute("data-category") : "all";
 
+
+
   if (seciliKat === "all") {
     etkinlikleriBas(etkinlikler);
   } else {
@@ -86,6 +101,8 @@ function favoriYap(id) {
     for (var k = 0; k < etkinlikler.length; k++) {
       if (etkinlikler[k].category.toLowerCase() === seciliKat.toLowerCase()) {
         filtrelenen.push(etkinlikler[k]);
+
+        
       }
     }
     etkinlikleriBas(filtrelenen);
