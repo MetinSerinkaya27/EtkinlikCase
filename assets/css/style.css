@@ -26,7 +26,6 @@ ul {
   list-style: none;
 }
 
-/* Navigasyon / Header */
 .header {
   background: #ffffff;
   border-bottom: 1px solid #e0e0e0;
@@ -214,12 +213,17 @@ ul {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+#events-grid {
+  min-height: 420px;
+  align-items: start;
+}
 
 .card-img-wrap {
-  position: relative;
   width: 100%;
-  height: 180px;
-  background: #eee;
+  aspect-ratio: 16 / 9;
+  background-color: #1f2937;
+  overflow: hidden;
+  position: relative;
 }
 
 .card-img-wrap img {
@@ -385,6 +389,10 @@ ul {
   color: #666;
 }
 
+#detay-alani {
+  min-height: 520px;
+}
+
 .detay-kutu {
   background: #ffffff;
   border: 1px solid #e0e0e0;
@@ -398,16 +406,18 @@ ul {
 }
 
 .detay-sol {
-  flex: 0 0 360px !important;
-  width: 360px !important;
-  max-width: 360px !important;
+  flex: 0 0 340px !important;
+  width: 340px !important;
+  max-width: 340px !important;
+  min-height: 400px; 
 }
 
 .detay-sol img {
   width: 100% !important;
-  height: auto;
-  border-radius: 4px;
-  display: block;
+  height: auto !important;
+  max-height: 440px;
+  object-fit: contain; 
+  border-radius: 6px;
 }
 
 .detay-sag {
@@ -429,6 +439,7 @@ ul {
 .detay-baslik {
   font-size: 24px;
   margin-bottom: 14px;
+  color: #111827;
 }
 
 .detay-bilgiler {
@@ -441,18 +452,19 @@ ul {
 
 .detay-bilgiler div, .detay-bilgiler p {
   font-size: 14px;
-  color: #333;
+  color: #1f2937;
   margin-bottom: 6px;
 }
 
 .detay-aciklama h3 {
   font-size: 16px;
   margin-bottom: 8px;
+  color: #111827;
 }
 
 .detay-aciklama p {
   font-size: 14px;
-  color: #555;
+  color: #374151; 
   line-height: 1.6;
 }
 
@@ -499,9 +511,6 @@ ul {
     flex: none !important;
   }
 }
-/* ===================================================
-   BLOG SAYFASI STİLLERİ
-   =================================================== */
 .yazi-kutu {
   display: flex;
   flex-direction: column;
@@ -623,4 +632,10 @@ ul {
   color: #444444;
   line-height: 1.7;
   margin-bottom: 10px;
+}
+
+
+#etkinlik-cards {
+  min-height: 520px;
+  align-content: start;
 }

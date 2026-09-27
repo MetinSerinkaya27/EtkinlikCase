@@ -8,13 +8,14 @@ function etkinlikleriBas(liste) {
   for (var i = 0; i < liste.length; i++) {
     var e = liste[i];
     var favMi = favoriler.includes(e.id);
+    var lazyAttr = i >= 2 ? 'loading="lazy"' : 'fetchpriority="high"';
 
     grid.innerHTML += `
       <div class="event-card">
         <div class="card-img-wrap">
-          <img src="${e.image}" alt="${e.title}">
+          <img src="${e.image}" alt="${e.title}" width="400" height="250" ${lazyAttr}>
           <span class="card-badge">${e.category}</span>
-          <button class="btn-fav ${favMi ? "active" : ""}" onclick="favoriYap(${e.id})">
+          <button class="btn-fav ${favMi ? "active" : ""}" onclick="favoriYap(${e.id})" aria-label="Favoriye ekle">
             ${favMi ? "★" : "☆"}
           </button>
         </div>
@@ -31,7 +32,6 @@ function etkinlikleriBas(liste) {
     `;
   }
 }
-
 
 var butonlar = document.querySelectorAll(".filter-btn");
 
